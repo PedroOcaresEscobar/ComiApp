@@ -1,0 +1,60 @@
+
+.logout-button {
+    margin-top: auto; /* Empuja el ítem hacia el fondo */
+  }
+
+  @keyframes slideIn {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .menu-item-label {
+    animation: slideIn 0.5s ease-out;
+    animation-fill-mode: forwards; /* Mantiene la animación final después de que termina */
+  }
+  
+  
+  .menu-item {
+    animation: slideIn 0.3s ease-out;
+    animation-fill-mode: forwards; /* Mantiene la animación final después de que termina */
+  }
+  
+  
+  
+  ion-menu {
+      --background: var(--ion-color-blank); /* Color de fondo del menú */
+      --ion-toolbar-background: var(--ion-color-blank); /* Color de fondo del toolbar */
+      --color: white; /* Color del texto */
+    
+      ion-toolbar {
+        --background: var(--ion-color-cuartary); /* Color de fondo del toolbar */
+        --color: white; /* Color del título */
+      }
+  
+      ion-content{
+          --background: var(--ion-color-primary);
+  
+          ion-list{
+              padding: 0px;
+          }
+      }
+    
+      ion-item {
+        --background: var(--ion-color-tertiary);; /* Color de fondo de los items */
+    
+        &.item-button {
+          --background-hover: rgb(255, 0, 0); /* Color de fondo cuando pasas el mouse */
+        }
+    
+        ion-label {
+          --color: rgb(255, 255, 255); /* Color del texto de los items */
+        }
+      }
+    }
+    

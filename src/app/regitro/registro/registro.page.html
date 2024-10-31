@@ -1,0 +1,27 @@
+<ion-content>
+  <div class="containerMain">
+    <div class="register-container">
+      <div class="register-card">
+        <h2>Registrarse</h2>
+
+        <form (ngSubmit)="register()">
+          <p-floatLabel>
+            <input id="email" type="email" pInputText [(ngModel)]="username" name="username" required />
+            <label for="email">Email</label>
+          </p-floatLabel>
+          
+          <p-floatLabel>
+            <input id="password" type="password" pInputText [(ngModel)]="password" name="password" required />
+            <label for="password">Password</label>
+          </p-floatLabel>
+
+          <p-button label="Registrarse" icon="pi pi-user-plus" type="submit"></p-button>
+          
+          <!-- Mostrar mensaje de error -->
+          <div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>
+        </form>
+        
+      </div>
+    </div>
+  </div>
+</ion-content>

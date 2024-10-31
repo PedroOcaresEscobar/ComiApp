@@ -1,0 +1,9 @@
+ion-toolbar {
+    --background: var(--ion-color-cuartary); /* Cambiar el fondo */
+    --color: white; /* Cambiar el color del texto */
+  
+    ion-title {
+      font-size: 1.5rem; /* Tamaño del texto */
+      font-weight: bold; /* Peso del texto */
+    }
+  }

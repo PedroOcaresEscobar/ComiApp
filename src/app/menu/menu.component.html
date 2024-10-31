@@ -1,0 +1,34 @@
+<ion-menu contentId="main-content" menuId="m1">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>ComiMenu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+      <ion-item button [routerLink]="['/main']">
+        <ion-label class="menu-item-label">Novedades</ion-label>
+      </ion-item>
+      <ion-item button [routerLink]="['/recetas']">
+        <ion-label class="menu-item-label">Buscar Recetas</ion-label>
+      </ion-item>
+      <ion-item button [routerLink]="['/mis-recetas']">
+        <ion-label class="menu-item-label">Mis Recetas</ion-label>
+      </ion-item>
+      <ion-item button [routerLink]="['/restaurantes-cercanos']"> 
+        <ion-label class="menu-item-label">Restaurantes Cercanos</ion-label>
+      </ion-item>
+      <ion-item button [routerLink]="['/mis-evaluaciones']">
+        <ion-label class="menu-item-label">Mis Evaluaciones</ion-label>
+      </ion-item>
+      <ion-item button [routerLink]="['/register']">
+        <ion-label class="menu-item-label">Registrarse</ion-label>
+      </ion-item>
+    </ion-list>
+    <div class="logout-button">
+      <ion-item button [routerLink]="['/login']">
+        <ion-label class="menu-item-label">Cerrar Sesión</ion-label>
+      </ion-item>
+    </div>
+  </ion-content>
+</ion-menu>

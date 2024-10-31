@@ -1,0 +1,33 @@
+ion-content {
+    --background: var(--ion-color-primary); /* Fondo de todo el contenido */
+  
+    .containerMain {
+      background: var(--ion-color-primary); /* Fondo de la clase contenedora */
+      margin-top: 70px;
+    }
+  
+    ion-icon{
+        color: var(--ion-color-cuartary)
+    }
+    
+    ion-title{
+        color: var(--ion-color-cuartary);
+        font-weight: bold;
+    }
+    
+    ion-list {
+      background: var(--ion-color-extra); /* Fondo de la lista */
+      border-radius: 10px;
+      padding:0px;
+      
+      ion-item {
+        --background: var(--ion-color-extra); /* Fondo transparente para que herede el fondo de la lista */
+        --ion-color-base: black; /* Color de texto claro (opcional) */
+      }
+  
+      ion-label {
+        font-weight: bold;
+        color: var(--ion-color-cuartary); /* Cambia el color del texto en el label */
+      }
+    }
+  }

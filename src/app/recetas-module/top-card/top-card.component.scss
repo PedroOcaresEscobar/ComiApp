@@ -1,0 +1,35 @@
+ion-card-title{
+    text-align: center;
+    color: var(--ion-color-blank);
+    font-weight: bold;
+}
+
+.contentUbication{
+    display: flex;
+
+    align-items: center;
+}
+
+ion-card{
+    --background: var(--ion-color-cuartary);
+    border-radius:10px;
+
+    ion-icon{
+        color: rgb(237, 71, 71);
+    }
+    ion-card-subtitle{
+        color: var(--ion-color-blank)
+    }
+    ion-list{
+        padding: 10px;
+        background: var(--ion-color-extra);
+        border-radius:10px;
+
+
+        ion-item{
+            --background: var(--ion-color-extra);
+            --color: var(--ion-color-cuartary);
+            font-weight: bold;
+        }
+    }
+}
