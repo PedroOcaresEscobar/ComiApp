@@ -79,3 +79,17 @@ con este comando creamos y sincronizamos con nuestro repositorio remoto nuestra 
 En caso de tener problemas seleccionar directorio base y ejecutar este comando removera el archivo index.lock que 
 bloquea git mientra esta ejecutrando otro proceso o quedo "pegado" por algun error por ejemplo cerrar el terminal 
 mientras se ejecuta algun comando.
+
+
+
+
+-------------------------------Comandos adicionales-----------------------------------------
+
+---mkdir carpetanueva
+Con este comando creamos un directorio nuevo (carpeta nueva)
+
+---mkdir -p Carpeta1/carpeta2/carpeta3
+Con este comando creamos una estructura de directorios (carpetas con subcarpetas)
+
+---cd carpetanueva
+Ingresamos por terminal al directorio deseado.
