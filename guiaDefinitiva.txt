@@ -1,0 +1,81 @@
+
+Con este comando selecionamos nuestro repositorio local e indicamos que trabajaremos con git
+---git init
+
+Este es de los primeros comando que utlizamos, ya que estaremos 
+configurando el nombre de usuario para luego mostrar quien hizo los cambios.
+---git config user.name "nombre_de_github"
+
+
+En este comando configuramos el mail asociado a nuestro github.
+---git config user.email "tu_mail_asociado@github"
+
+
+Con este comando seleccionamos por defecto "origin" en nuestro "direccion_de_repositorio_github"
+---git remote add origin "direccion_de_repositorio_github"
+
+
+Comando para revisar el estado de transferencia de los archivos, ejemplo ver los que tienen cambios,
+pero aun no los he eactualizado en mi repositorio remoto.
+---git status
+
+Agregamos un archivo especifico a nuestro paquete de cambios que subiremos a nuestro repositorio remoto origin.
+--git add "nombre_del_archivo_para_subir" 
+
+El comando git add "." con el punto, pone todos los archivos de nuestro repositorio local a nuestre paquete de cambios que subiremos al repositorio remoto.
+---git add .
+
+Comando para agregar comentarios a los archivos modificados una vez tengamos el git push ejecutado.
+--git commit -m "nombre_de_tu_commit"
+
+
+Con este comando enviamos los archivos agregados cuando utilizamos el comando git add , origin 
+es el nombre de nuestro repositorio remoto y master en nuestra branch o rama en la que estaremos trabajando.
+---git push -u origin master
+
+Comando utilizado para forzar el push en nuestro repositorio remoto, lo utilizamos cuando estamos seguros cuando no hemos 
+sincronizado nuestro remoto con el local, pero estamos seguros de los cambios.
+---git push -u origin master --force
+
+Con este Comando clonamos nuestro repopsitorio remoto en nuestra carpeta o repostorio local.
+---git clone "url_de_repositorio_remoto"
+
+Con este comando clonamos el repostorio remotoro en la rama que nosotros seleccionemos con el -b y el nombre de la rama preferia
+---git clone -b rama_preferida "url_de_repositorio_remoto"
+
+
+
+-------------------Control de ramas Branches------------------------
+
+Cada rama es una linea independiente de desarrollo.
+
+---git branch
+Nos indica en que rama estamos.
+
+---git branch ramaPrueba
+Creamos otra rama llamada ramaPrueba
+
+---git branch -m ramaPrueba RamaPedro
+Cambiamos el nombre a una rama
+
+---git checkout RamaPedro
+Cambiamos a la rama RamaPedro
+
+---git branch -d Rama_que_quieres_eliminar
+con este comando elegimos que rama queremos eliminar, no puedes estar en la rama o no podras eliminar.
+
+---git diff PrimeraRamaComparar SegundaRamaComparar
+Con este comparamos entre dos ramas las diferencias que puedan tener
+
+---git merge ramaOrigen ramaDestino
+Con este comando unimos por asi decirlo los cambios de la rama de orgigen con la rama de destino,
+para que esto funcione debes estar en la rama de destino
+
+
+---git push -u origin RamaNueva
+con este comando creamos y sincronizamos con nuestro repositorio remoto nuestra nueva rama local
+
+---rm index.lock
+En caso de tener problemas seleccionar directorio base y ejecutar este comando removera el archivo index.lock que 
+bloquea git mientra esta ejecutrando otro proceso o quedo "pegado" por algun error por ejemplo cerrar el terminal 
+mientras se ejecuta algun comando.
