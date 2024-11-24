@@ -1,8 +1,8 @@
-
+1
 Con este comando selecionamos nuestro repositorio local e indicamos que trabajaremos con git
 ---git init
 
-Este es de los primeros comando que utlizamos, ya que estaremos 
+Este es de los primeros comando que utilizamos, ya que estaremos 
 configurando el nombre de usuario para luego mostrar quien hizo los cambios.
 ---git config user.name "nombre_de_github"
 
@@ -16,13 +16,13 @@ Con este comando seleccionamos por defecto "origin" en nuestro "direccion_de_rep
 
 
 Comando para revisar el estado de transferencia de los archivos, ejemplo ver los que tienen cambios,
-pero aun no los he eactualizado en mi repositorio remoto.
+pero aun no los he actualizado en mi repositorio remoto.
 ---git status
 
 Agregamos un archivo especifico a nuestro paquete de cambios que subiremos a nuestro repositorio remoto origin.
 --git add "nombre_del_archivo_para_subir" 
 
-El comando git add "." con el punto, pone todos los archivos de nuestro repositorio local a nuestre paquete de cambios que subiremos al repositorio remoto.
+El comando git add "." con el punto, pone todos los archivos de nuestro repositorio local a nuestra paquete de cambios que subiremos al repositorio remoto.
 ---git add .
 
 Comando para agregar comentarios a los archivos modificados una vez tengamos el git push ejecutado.
@@ -37,10 +37,10 @@ Comando utilizado para forzar el push en nuestro repositorio remoto, lo utilizam
 sincronizado nuestro remoto con el local, pero estamos seguros de los cambios.
 ---git push -u origin master --force
 
-Con este Comando clonamos nuestro repopsitorio remoto en nuestra carpeta o repostorio local.
+Con este Comando clonamos nuestro repositorio remoto en nuestra carpeta o repostorio local.
 ---git clone "url_de_repositorio_remoto"
 
-Con este comando clonamos el repostorio remotoro en la rama que nosotros seleccionemos con el -b y el nombre de la rama preferia
+Con este comando clonamos el repositorio remotoro en la rama que nosotros seleccionemos con el -b y el nombre de la rama preferia
 ---git clone -b rama_preferida "url_de_repositorio_remoto"
 
 
