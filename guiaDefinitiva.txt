@@ -25,6 +25,12 @@ Agregamos un archivo especifico a nuestro paquete de cambios que subiremos a nue
 El comando git add "." con el punto, pone todos los archivos de nuestro repositorio local a nuestra paquete de cambios que subiremos al repositorio remoto.
 ---git add .
 
+El comando git add -u se utiliza cuando eliminas manualmente un archivo en tu repositorio local y quieres que se se actualice en el remoto.
+--- git add -u
+
+Con este eliminamos un archvio y ademas registramos el cambio en nuestro repositorio remoto
+---git rm <nombre_del_archivo>
+
 Comando para agregar comentarios a los archivos modificados una vez tengamos el git push ejecutado.
 --git commit -m "nombre_de_tu_commit"
 
